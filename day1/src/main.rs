@@ -1,6 +1,13 @@
 fn main() -> Result<(), std::io::Error> {
     let input = read_input()?;
-    println!("{input}");
+    let lines = input.split("\n\n");
+
+    for group in lines {
+        println!("Group:");
+        for line in group.lines() {
+            println!("   - Got line: {}", line);
+        }
+    }
     Ok(())
 }
 

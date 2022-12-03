@@ -21,7 +21,8 @@ fn main() -> Result<(), std::io::Error> {
         max.push(sum);
     }
     max.sort_by_key(|&v| v);
-    println!("{}", max[0]);
+    println!("{}", max[3]);
+    dbg!(max);
     Ok(())
 }
 

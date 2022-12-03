@@ -1,6 +1,7 @@
-fn main() {
-    let input = read_input().unwrap();
+fn main() -> Result<(), std::io::Error> {
+    let input = read_input()?;
     println!("{input}");
+    Ok(())
 }
 
 fn read_input() -> Result<String, std::io::Error> {
